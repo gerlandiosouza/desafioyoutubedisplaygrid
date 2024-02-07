@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, 'Open Sans', sans-serif;
+}
+
+
+body {
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto calc(100vh-header);
+    background-color: aqua;
+    grid-template-areas:
+        "heade heade"
+        "aside main";
+}
+
+.header {
+
+    grid-area: heade;
+    background-color: white;
+    justify-content: space-between;
+
+}
+
+nav {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-block: 10px;
+    align-items: center;
+    box-shadow: 2px 20px rgb(124, 122, 122);
+
+
+}
+
+.menu-logo {
+    display: flex;
+    gap: 24px;
+}
+
+.menu-center {
+    display: flex;
+
+}
+
+.menu-lateral {
+    display: flex;
+    gap: 24px;
+    flex-basis: 24px;
+    align-items: center;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: white;
+    padding-right: 24px;
+}
+
+.aside p {
+    font-size: 14px;
+}
+
+.sons-aside {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    padding: 24px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.main {
+    grid-area: main;
+    background-color: white;
+}
+
+.main {
+    display: grid;
+    grid-area: main;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "main-1 main-2 main-3 main-4"
+        "main-5 main-6 main-7 main-8"
+        "main-9 main-10 main-11 main-12";
+    padding: 24px;
+    justify-items: center;
+    
+}
+
+.main-sons {
+
+   
+    align-items: center;
+    padding: auto;
+
+    margin-block: 24px;
+    
+  
+
+}
+
+.img-video {
+    display: flex;
+ 
+}
+
+.main p {
+    font-size: 12px;
+    line-height: 14.06px;
+    
+
+
+}
+
+h6 {
+
+    font-size: 14px;
+    margin-bottom: 14px;
+    line-height: 16.41px;
+}
+
+
+.title-views {
+    display: flex;
+    
+    margin-top: 20px;
+    max-width: 249px;
+    position: relative;
+    gap: 10px
+}
+
+.letters {
+    width: 197px;
+    padding-bottom: 24px;
+
+}
